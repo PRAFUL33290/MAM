@@ -105,10 +105,19 @@
 <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-on-primary font-medium hover:bg-on-primary-container transition-colors duration-300 active:scale-95 transform" href="contact.html">
             Inscription
         </a>
-<button class="md:hidden text-[#4B6542] p-2">
+<button id="mobile-menu-btn" class="md:hidden text-[#4B6542] p-2" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed top-[4.5rem] left-[2.5%] right-[2.5%] z-40 hidden bg-stone-50/95 dark:bg-stone-900/95 backdrop-blur-xl rounded-2xl shadow-[0_12px_40px_rgba(75,101,66,0.15)] p-6 flex-col gap-4 md:hidden">
+<a class="text-stone-600 dark:text-stone-400 font-medium py-2 border-b border-outline-variant/20 hover:text-[#4B6542] dark:hover:text-[#8DAA81]" href="index.html">Accueil</a>
+<a class="text-[#4B6542] dark:text-[#8DAA81] font-semibold py-2 border-b border-outline-variant/20" href="la-mam.html">La MAM</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium py-2 border-b border-outline-variant/20 hover:text-[#4B6542] dark:hover:text-[#8DAA81]" href="equipe.html">L'équipe</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium py-2 border-b border-outline-variant/20 hover:text-[#4B6542] dark:hover:text-[#8DAA81]" href="activites.html">Activités</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium py-2 border-b border-outline-variant/20 hover:text-[#4B6542] dark:hover:text-[#8DAA81]" href="contact.html">Inscription</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium py-2 hover:text-[#4B6542] dark:hover:text-[#8DAA81]" href="contact.html">Contact</a>
+</div>
 <!-- Main Content -->
 <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
 <!-- Hero Section -->
@@ -258,4 +267,5 @@
             © 2024 MAM Les Petits Médocains - Le Pian-Médoc. Tous droits réservés.
         </div>
 </footer>
+<script src="mobile-menu.js"></script>
 </body></html>
