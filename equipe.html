@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'équipe - MAM Les Petits Médocains</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#31302e",
+                    "on-secondary-fixed": "#231a09",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0ede9",
+                    "secondary-container": "#eedec2",
+                    "surface-container-highest": "#e5e2de",
+                    "surface-tint": "#4b6542",
+                    "surface-variant": "#e5e2de",
+                    "outline-variant": "#c3c8bd",
+                    "on-primary-fixed": "#092005",
+                    "on-tertiary-fixed-variant": "#70361f",
+                    "on-primary-container": "#263e1f",
+                    "on-surface": "#1c1c1a",
+                    "on-secondary-fixed-variant": "#504531",
+                    "primary-fixed": "#cdebbe",
+                    "surface": "#fcf9f5",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#695d47",
+                    "on-surface-variant": "#434840",
+                    "surface-container-low": "#f6f3ef",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#ebe8e4",
+                    "inverse-primary": "#b1cfa4",
+                    "secondary-fixed": "#f1e0c5",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "background": "#fcf9f5",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "outline": "#74796f",
+                    "primary-fixed-dim": "#b1cfa4",
+                    "secondary-fixed-dim": "#d4c5aa",
+                    "on-tertiary-container": "#5e2812",
+                    "on-background": "#1c1c1a",
+                    "inverse-on-surface": "#f3f0ec",
+                    "primary": "#4b6542",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#8daa81",
+                    "tertiary-fixed": "#ffdbce",
+                    "surface-dim": "#dcdad6",
+                    "tertiary-container": "#dd8e70",
+                    "error": "#ba1a1a",
+                    "tertiary": "#8d4d33",
+                    "on-tertiary-fixed": "#370e00",
+                    "on-secondary-container": "#6d614b",
+                    "surface-bright": "#fcf9f5",
+                    "on-primary-fixed-variant": "#344d2c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {},
+            "fontFamily": {
+                    "headline": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label": [
+                            "Plus Jakarta Sans"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body antialiased selection:bg-primary/20 selection:text-primary pt-24 min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 py-3 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-full mt-4 mx-auto w-[95%] max-w-7xl shadow-[0_12px_40px_rgba(75,101,66,0.08)]">
+<div class="text-lg font-bold tracking-tighter text-[#4B6542] dark:text-[#8DAA81]">
+            <a href="index.html">MAM Les Petits Médocains</a>
+        </div>
+<div class="hidden md:flex items-center gap-6 font-plus-jakarta-sans leading-relaxed tracking-tight">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="index.html">Accueil</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="la-mam.html">La MAM</a>
+<a class="text-[#4B6542] dark:text-[#8DAA81] font-semibold border-b-2 border-[#4B6542] dark:border-[#8DAA81] pb-1 hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="equipe.html">L'équipe</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="activites.html">Activités</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-primary text-on-primary px-6 py-2 rounded-full font-medium active:scale-95 transform transition-transform hover:bg-on-primary-container">
+            Inscription
+        </a>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 py-16 flex flex-col gap-24">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center max-w-3xl mx-auto gap-6 pt-12">
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-on-background leading-tight">
+                Rencontrez les visages derrière <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">les sourires</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mt-4">
+                Une équipe de quatre professionnelles de la petite enfance, unies par la même passion : offrir un environnement chaleureux, bienveillant et sécurisant pour le développement de vos enfants.
+            </p>
+</section>
+<!-- Team Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<!-- Member 1 -->
+<article class="bg-surface-container-low rounded-xl p-8 md:p-10 flex flex-col gap-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+<div class="w-32 h-32 shrink-0 rounded-[2rem] overflow-hidden bg-surface-container-highest shadow-[0_8px_30px_rgba(75,101,66,0.12)] border border-outline-variant/15">
+<img alt="Portrait de Sophie" class="w-full h-full object-cover" data-alt="A kind caregiver in a warm wooden room guiding a toddler with Montessori materials, soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAmr81sOknZ1AtsXCzd4ujQ6Qh2xCF8X0SRDvMtJS-FOJFC8tAk8LDUVyk4wEFteO6iTAOGBKKZyH06MzjzpqnjLr7moBqRjm_X2rN3h715Egq9hXkU4H-y-AejYc052LZRTDHNWqCfdGAtRwtSe0FjPZcS81P_AKvsGbU-feYwWs_L9U9m5D1UqIEsr10eze-Bbn5OrJIxvbXMw_DCPGBOT_TKFyRIRkl2MV6Ef_3PYQl8vESBwU8AO5VqbLULmkmsXZTOhm6N68D"/>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Sophie Dupont</h2>
+<span class="font-label text-sm font-medium text-secondary bg-secondary-container/50 px-3 py-1 rounded-full w-max">Éducatrice de Jeunes Enfants</span>
+<div class="flex gap-2 mt-2 text-primary">
+<span class="material-symbols-outlined" data-icon="psychology" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="material-symbols-outlined" data-icon="nature" style="font-variation-settings: 'FILL' 1;">nature</span>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-body text-base text-on-surface-variant leading-relaxed">
+                        Avec plus de 10 ans d'expérience en crèche, Sophie apporte son expertise sur le développement moteur et cognitif. Passionnée par la pédagogie Montessori, elle privilégie l'autonomie et les activités sensorielles. Son approche douce et patiente rassure naturellement les tout-petits.
+                    </p>
+</div>
+</article>
+<!-- Member 2 -->
+<article class="bg-surface-container-lowest rounded-lg p-8 md:p-10 flex flex-col gap-8 shadow-[0_12px_40px_rgba(75,101,66,0.06)] relative overflow-hidden group border border-outline-variant/10">
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-tertiary-fixed/30 rounded-full blur-2xl translate-y-1/3 -translate-x-1/4"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+<div class="w-32 h-32 shrink-0 rounded-full overflow-hidden bg-surface-container-highest shadow-[0_8px_30px_rgba(141,77,51,0.1)] border border-outline-variant/15">
+<img alt="Portrait de Marie" class="w-full h-full object-cover" data-alt="A nurturing woman smiling while sitting with a young child near a bright window, soft colors and gentle atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4D_Guo85F_1WLSWI8eoPO0G4jIB5mWaoJYp3wJZNGJFSy8TZAkI82u1s45MpRAIHHkZjpOBr__CIeJByDlJ7bOg7f5UgkvNkCljiv6_NuVkS9F0qKgnYNAuvB08DnaLrAEZTxjC1rOlzF4i0JLfy_fs8SnmPmFJ4aBmW43h3pHf731BlpAGe5D7K8N0Hnt9EPn3DvshXSxXEM2Xhz7J0APsn_dERp1PFkFLz0CbjLb5dRxH6f4WyGzOyvMdvIahF5DvfOkEW1b0M5"/>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Marie Lambert</h2>
+<span class="font-label text-sm font-medium text-tertiary bg-tertiary-container/30 px-3 py-1 rounded-full w-max">Auxiliaire de Puériculture</span>
+<div class="flex gap-2 mt-2 text-tertiary">
+<span class="material-symbols-outlined" data-icon="restaurant_menu" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="material-symbols-outlined" data-icon="spa" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-body text-base text-on-surface-variant leading-relaxed">
+                        Marie est notre spécialiste du soin et de la nutrition. Elle veille au confort quotidien de chaque enfant avec une attention particulière aux rythmes individuels. Créative, elle anime avec joie les ateliers de découvertes gustatives et les temps calmes en musique.
+                    </p>
+</div>
+</article>
+<!-- Member 3 -->
+<article class="bg-surface-container-lowest rounded-lg p-8 md:p-10 flex flex-col gap-8 shadow-[0_12px_40px_rgba(75,101,66,0.06)] relative overflow-hidden group border border-outline-variant/10">
+<div class="absolute top-0 right-0 w-56 h-56 bg-secondary-fixed/40 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+<div class="w-32 h-32 shrink-0 rounded-[2rem] overflow-hidden bg-surface-container-highest shadow-[0_8px_30px_rgba(105,93,71,0.1)] border border-outline-variant/15" style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;">
+<img alt="Portrait de Julie" class="w-full h-full object-cover" data-alt="A cheerful young woman laughing and playing with a small child in a sunlit room filled with toys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRscj1JvtQyTDYN0FTXq37GDuizlGfzSnCPU07TIzpsr_7qHKWpMzIx2EstIswjw243Zn2F4F7kg2-XwYoMGLf1ZGi0t0bg4OXNYgXqWQipancTpJwZXJ5XeGkX14BVDCIMD7R1a1hIOuK1J-sb14c3klNt1eA7HsjzL2u2C_1Mx_HpEph7SRMi30Z0JSJ4GflIM7fwUgiBaY68yHzmh6xNE5Ak-BtRgCh6rT5Ya8xb0Oa_bN_5Qn1kDs6ihrceQl9Qc3nN_ZiU5iS"/>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Julie Martin</h2>
+<span class="font-label text-sm font-medium text-primary-container bg-primary-fixed/50 px-3 py-1 rounded-full w-max text-on-primary-container">Animatrice Petite Enfance</span>
+<div class="flex gap-2 mt-2 text-primary-container text-on-primary-container">
+<span class="material-symbols-outlined" data-icon="palette" style="font-variation-settings: 'FILL' 1;">palette</span>
+<span class="material-symbols-outlined" data-icon="music_note" style="font-variation-settings: 'FILL' 1;">music_note</span>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-body text-base text-on-surface-variant leading-relaxed">
+                        Débordante d'énergie, Julie est le moteur créatif de la MAM. Arts plastiques, comptines, et parcours de motricité : elle imagine chaque jour de nouvelles aventures pour éveiller les sens. Son rire communicatif apporte une véritable lumière dans la maison.
+                    </p>
+</div>
+</article>
+<!-- Member 4 -->
+<article class="bg-surface-container-low rounded-xl p-8 md:p-10 flex flex-col gap-8 relative overflow-hidden group">
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
+<div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+<div class="w-32 h-32 shrink-0 rounded-[2rem] overflow-hidden bg-surface-container-highest shadow-[0_8px_30px_rgba(75,101,66,0.12)] border border-outline-variant/15" style="border-radius: 50% 50% 30% 70% / 60% 40% 70% 40%;">
+<img alt="Portrait de Claire" class="w-full h-full object-cover" data-alt="A serene caregiver holding a child's hand while walking in a garden, soft greenery and natural morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9xvQqptADhN_myj2h7_zZmstFmUHSThLyrNyTwGk9tdNa4AFxykMA9A8E57XtloJgV_MFr7PgwXnQSMW0JQ6SlghJEemAQp5N9L2XBvj2DKUFWw6Ro1pTYSBJ7qG0gJPMhdq338e5D_oEcQv8pOyURU2GS3r5COuSBPh3PXwksiRZ7etMUHR-9_3PHGcdI3PSDX2y24YBJTr2Qjc1lXH-2nUvif1e7uzNNNvSwghapJgNE6I1WYpbJsWAGfk3pk8oS1MqJIAZwCZ1"/>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Claire Dubois</h2>
+<span class="font-label text-sm font-medium text-secondary bg-secondary-container/50 px-3 py-1 rounded-full w-max">Assistante Maternelle Agréée</span>
+<div class="flex gap-2 mt-2 text-secondary">
+<span class="material-symbols-outlined" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-body text-base text-on-surface-variant leading-relaxed">
+                        Figure rassurante de l'équipe, Claire possède une grande expérience de l'accueil familial. Elle attache une importance vitale à la communication avec les parents pour assurer une continuité sereine entre la maison et la MAM. Elle adore initier les enfants au jardinage.
+                    </p>
+</div>
+</article>
+</section>
+<!-- Values/Approach Summary Section -->
+<section class="bg-surface-container-low rounded-xl p-10 md:p-16 flex flex-col items-center text-center gap-8 mb-12">
+<h3 class="font-headline text-3xl font-bold text-on-surface">Notre approche commune</h3>
+<div class="flex flex-wrap justify-center gap-4 md:gap-8 max-w-4xl">
+<div class="flex items-center gap-3 bg-surface-container-highest px-6 py-4 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="diversity_3">diversity_3</span>
+<span class="font-body font-medium text-on-surface">Co-éducation avec les parents</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-highest px-6 py-4 rounded-full">
+<span class="material-symbols-outlined text-tertiary" data-icon="self_improvement">self_improvement</span>
+<span class="font-body font-medium text-on-surface">Respect du rythme de l'enfant</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-highest px-6 py-4 rounded-full">
+<span class="material-symbols-outlined text-primary-container text-on-primary-container" data-icon="nature_people">nature_people</span>
+<span class="font-body font-medium text-on-surface">Éveil au contact de la nature</span>
+</div>
+</div>
+<p class="font-body text-on-surface-variant max-w-2xl mt-4 leading-relaxed">
+                Bien que nous ayons chacune nos spécialités, nous formons une équipe soudée, partageant un projet éducatif commun centré sur le bien-être et l'épanouissement de vos petits.
+            </p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-8 py-12 md:py-20 flex flex-col items-center gap-8 bg-stone-100 dark:bg-stone-950 rounded-t-[3rem] mt-auto">
+<div class="text-xl font-black text-[#4B6542] dark:text-[#8DAA81]">
+            <a href="index.html">MAM Les Petits Médocains</a>
+        </div>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-4 font-plus-jakarta-sans text-sm leading-relaxed">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="index.html">Accueil</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="la-mam.html">La MAM</a>
+<a class="text-[#4B6542] dark:text-[#8DAA81] font-bold hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="equipe.html">L'équipe</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="activites.html">Activités</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="contact.html">Inscription</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="contact.html">Contact</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="https://monenfant.fr">monenfant.fr</a>
+</div>
+<div class="text-stone-500 dark:text-stone-400 font-plus-jakarta-sans text-sm leading-relaxed mt-4">
+            © 2024 MAM Les Petits Médocains - Le Pian-Médoc. Tous droits réservés.
+        </div>
+</footer>
+</body></html>

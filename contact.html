@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inscription &amp; Contact - MAM Les Petits Médocains</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#31302e",
+                        "on-secondary-fixed": "#231a09",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0ede9",
+                        "secondary-container": "#eedec2",
+                        "surface-container-highest": "#e5e2de",
+                        "surface-tint": "#4b6542",
+                        "surface-variant": "#e5e2de",
+                        "outline-variant": "#c3c8bd",
+                        "on-primary-fixed": "#092005",
+                        "on-tertiary-fixed-variant": "#70361f",
+                        "on-primary-container": "#263e1f",
+                        "on-surface": "#1c1c1a",
+                        "on-secondary-fixed-variant": "#504531",
+                        "primary-fixed": "#cdebbe",
+                        "surface": "#fcf9f5",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#695d47",
+                        "on-surface-variant": "#434840",
+                        "surface-container-low": "#f6f3ef",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#ebe8e4",
+                        "inverse-primary": "#b1cfa4",
+                        "secondary-fixed": "#f1e0c5",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fcf9f5",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "outline": "#74796f",
+                        "primary-fixed-dim": "#b1cfa4",
+                        "secondary-fixed-dim": "#d4c5aa",
+                        "on-tertiary-container": "#5e2812",
+                        "on-background": "#1c1c1a",
+                        "inverse-on-surface": "#f3f0ec",
+                        "primary": "#4b6542",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#8daa81",
+                        "tertiary-fixed": "#ffdbce",
+                        "surface-dim": "#dcdad6",
+                        "tertiary-container": "#dd8e70",
+                        "error": "#ba1a1a",
+                        "tertiary": "#8d4d33",
+                        "on-tertiary-fixed": "#370e00",
+                        "on-secondary-container": "#6d614b",
+                        "surface-bright": "#fcf9f5",
+                        "on-primary-fixed-variant": "#344d2c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fcf9f5;
+            color: #1c1c1a;
+        }
+        .blob-mask {
+            mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="%23FF0066" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18.1,96.5,-3C96.2,12.1,89.5,26.7,80.1,39.6C70.6,52.5,58.3,63.7,44.2,71.8C30.1,79.9,14.2,84.9,-1.3,86.9C-16.8,88.9,-32.9,87.9,-46.8,80.6C-60.7,73.3,-72.4,59.7,-80.5,44.2C-88.6,28.7,-93.1,11.3,-92.4,-5.8C-91.7,-22.9,-85.8,-39.7,-75.4,-53C-65,-66.3,-50.1,-76.1,-35.1,-81.8C-20.1,-87.5,-5,-89.1,9.8,-86.6C24.6,-84.1,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)"/></svg>');
+            mask-size: cover;
+            mask-repeat: no-repeat;
+            mask-position: center;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body pt-32">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 py-3 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-full mt-4 mx-auto w-[95%] max-w-7xl shadow-[0_12px_40px_rgba(75,101,66,0.08)]">
+<div class="text-lg font-bold tracking-tighter text-[#4B6542] dark:text-[#8DAA81]"><a href="index.html">MAM Les Petits Médocains</a></div>
+<div class="hidden md:flex gap-8 font-plus-jakarta-sans leading-relaxed tracking-tight">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="index.html">Accueil</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="la-mam.html">La MAM</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="equipe.html">L'équipe</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="activites.html">Activités</a>
+<a class="text-[#4B6542] dark:text-[#8DAA81] font-semibold border-b-2 border-[#4B6542] dark:border-[#8DAA81] pb-1" href="contact.html">Inscription</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-primary text-on-primary rounded-full px-6 py-2 font-medium active:scale-95 transform transition-transform">Inscription</a>
+</nav>
+<main class="max-w-7xl mx-auto px-6 md:px-12 py-12 flex flex-col gap-16">
+<!-- Header Section -->
+<header class="text-center max-w-3xl mx-auto flex flex-col gap-6">
+<h1 class="text-5xl md:text-6xl font-bold font-headline tracking-tight text-on-surface">Venez nous rencontrer</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                Notre équipe est à votre écoute pour répondre à vos questions et préparer l'accueil de votre enfant dans un environnement bienveillant au cœur du Pian-Médoc.
+            </p>
+</header>
+<!-- Main Content Area: Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Contact Form (Left Side) -->
+<section class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_12px_40px_rgba(75,101,66,0.08)]">
+<h2 class="text-3xl font-bold font-headline mb-8 text-on-surface">Formulaire d'inscription</h2>
+<form class="flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-secondary" for="parent-name">Nom du parent</label>
+<input class="bg-surface-container-highest rounded-md px-4 py-3 border-none focus:ring-0 focus:outline focus:outline-1 focus:outline-[#74796f]/30 transition-all text-on-surface" id="parent-name" placeholder="Votre nom complet" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-secondary" for="phone">Téléphone</label>
+<input class="bg-surface-container-highest rounded-md px-4 py-3 border-none focus:ring-0 focus:outline focus:outline-1 focus:outline-[#74796f]/30 transition-all text-on-surface" id="phone" placeholder="06 00 00 00 00" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-secondary" for="email">Email</label>
+<input class="bg-surface-container-highest rounded-md px-4 py-3 border-none focus:ring-0 focus:outline focus:outline-1 focus:outline-[#74796f]/30 transition-all text-on-surface" id="email" placeholder="votre.email@exemple.com" type="email"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-secondary" for="child-name">Nom de l'enfant (optionnel)</label>
+<input class="bg-surface-container-highest rounded-md px-4 py-3 border-none focus:ring-0 focus:outline focus:outline-1 focus:outline-[#74796f]/30 transition-all text-on-surface" id="child-name" placeholder="Prénom" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-secondary" for="child-age">Âge de l'enfant</label>
+<select class="bg-surface-container-highest rounded-md px-4 py-3 border-none focus:ring-0 focus:outline focus:outline-1 focus:outline-[#74796f]/30 transition-all text-on-surface appearance-none" id="child-age">
+<option disabled="" selected="" value="">Sélectionnez l'âge</option>
+<option value="0-1">Moins de 1 an</option>
+<option value="1-2">1 à 2 ans</option>
+<option value="2-3">2 à 3 ans</option>
+<option value="pregnant">Enceinte</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-secondary" for="message">Votre message</label>
+<textarea class="bg-surface-container-highest rounded-md px-4 py-3 border-none focus:ring-0 focus:outline focus:outline-1 focus:outline-[#74796f]/30 transition-all text-on-surface resize-none" id="message" placeholder="Précisez vos besoins de garde (jours, horaires souhaités)" rows="4"></textarea>
+</div>
+<button class="mt-4 bg-primary text-on-primary rounded-full px-8 py-4 font-medium self-start hover:bg-primary-container transition-colors duration-300" type="submit">Envoyer la demande</button>
+</form>
+</section>
+<!-- Info & Map (Right Side) -->
+<section class="lg:col-span-5 flex flex-col gap-8">
+<!-- Contact Details Card -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col gap-6">
+<h3 class="text-2xl font-bold font-headline text-on-surface">Nos coordonnées</h3>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<p class="font-medium text-on-surface">MAM Les Petits Médocains</p>
+<p class="text-on-surface-variant">123 Avenue de la Forêt</p>
+<p class="text-on-surface-variant">33290 Le Pian-Médoc</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">phone</span>
+<p class="text-on-surface-variant">05 56 XX XX XX</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">mail</span>
+<p class="text-on-surface-variant">contact@lespetitsmedocains.fr</p>
+</div>
+<div class="mt-4 pt-6 border-t border-outline-variant/15 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="CAF Logo Placeholder" class="w-10 h-10 rounded-full object-cover" data-alt="Small round icon of the CAF logo or similar institutional family service symbol in soft colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqr5Gk1S8hgCfB_810WrH-6eM8l82cB-4qBF95dqHXYTjMfvwsJZGlm5K37Q_pCoxTZv5C89JGjrvqlssFNHsdbiXhqC4ID7OcOHMCuohTfOVKPgC_uk_xfIMTuRrsFCVmquGAcd6eFaP6LLW0YriatpBSuRiCtVCnp3v8YoMZd-qOa8vlsl9cI-8lVWrO4oZhFXUoo34aHIl4W4sNxLy0lLmE5T9WYDaU_-8T93SnpAKs_u6fjwTPqjm0oOT6KROk-sYObiKhEN6i"/>
+<span class="text-sm font-medium text-secondary">Agréé par la PMI</span>
+</div>
+<a class="text-primary font-medium hover:underline underline-offset-4 flex items-center gap-1" href="https://monenfant.fr" rel="noopener noreferrer" target="_blank">
+                            monenfant.fr
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Photo -->
+<div class="rounded-xl overflow-hidden h-64 bg-surface-container shadow-[0_12px_40px_rgba(75,101,66,0.08)] relative">
+<img alt="Babies and toddlers playing joyfully in a safe environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY4zt0D1G0OV2Hh4H4I5SYsscIOCBmh25NpnxrqqSw8CE8-FKN4xh78CEBKIsaR2aymDejtW8byrjBtgw5wxuM2WXQOMvOTPDqzMiDZnBdWl6M1jRsiowntCrW6iuPVAWzA2yBmvXoYmo4MKu860ZffQqb3Qm2PVhkW0Tl-LveWORHsTGeomLXRcmqv6MhK7SpxXBWH0I4VM32BppHcwrs3UlSvLUhdHY91dX0YKTd9GcWy4O5U-E3YvjL4Zf3c0PHGFlu0Pk8qKzf"/>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full px-8 py-12 md:py-20 flex flex-col items-center gap-8 bg-stone-100 dark:bg-stone-950 rounded-t-[3rem] mt-24">
+<div class="text-xl font-black text-[#4B6542] dark:text-[#8DAA81]"><a href="index.html">MAM Les Petits Médocains</a></div>
+<div class="flex flex-wrap justify-center gap-6 font-plus-jakarta-sans text-sm leading-relaxed">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="index.html">Accueil</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="la-mam.html">La MAM</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="equipe.html">L'équipe</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="activites.html">Activités</a>
+<a class="text-[#4B6542] dark:text-[#8DAA81] font-bold" href="contact.html">Inscription</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="contact.html">Contact</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="https://monenfant.fr">monenfant.fr</a>
+</div>
+<p class="font-plus-jakarta-sans text-sm leading-relaxed text-stone-500 dark:text-stone-400">© 2024 MAM Les Petits Médocains - Le Pian-Médoc. Tous droits réservés.</p>
+</footer>
+</body></html>

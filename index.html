@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAM Les Petits Médocains - Accueil</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#31302e",
+                        "on-secondary-fixed": "#231a09",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0ede9",
+                        "secondary-container": "#eedec2",
+                        "surface-container-highest": "#e5e2de",
+                        "surface-tint": "#4b6542",
+                        "surface-variant": "#e5e2de",
+                        "outline-variant": "#c3c8bd",
+                        "on-primary-fixed": "#092005",
+                        "on-tertiary-fixed-variant": "#70361f",
+                        "on-primary-container": "#263e1f",
+                        "on-surface": "#1c1c1a",
+                        "on-secondary-fixed-variant": "#504531",
+                        "primary-fixed": "#cdebbe",
+                        "surface": "#fcf9f5",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#695d47",
+                        "on-surface-variant": "#434840",
+                        "surface-container-low": "#f6f3ef",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#ebe8e4",
+                        "inverse-primary": "#b1cfa4",
+                        "secondary-fixed": "#f1e0c5",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fcf9f5",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "outline": "#74796f",
+                        "primary-fixed-dim": "#b1cfa4",
+                        "secondary-fixed-dim": "#d4c5aa",
+                        "on-tertiary-container": "#5e2812",
+                        "on-background": "#1c1c1a",
+                        "inverse-on-surface": "#f3f0ec",
+                        "primary": "#4b6542",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#8daa81",
+                        "tertiary-fixed": "#ffdbce",
+                        "surface-dim": "#dcdad6",
+                        "tertiary-container": "#dd8e70",
+                        "error": "#ba1a1a",
+                        "tertiary": "#8d4d33",
+                        "on-tertiary-fixed": "#370e00",
+                        "on-secondary-container": "#6d614b",
+                        "surface-bright": "#fcf9f5",
+                        "on-primary-fixed-variant": "#344d2c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 py-3 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl rounded-full mt-4 mx-auto w-[95%] max-w-7xl shadow-[0_12px_40px_rgba(75,101,66,0.08)]">
+<div class="text-lg font-bold tracking-tighter text-[#4B6542] dark:text-[#8DAA81]">
+            <a href="index.html">MAM Les Petits Médocains</a>
+        </div>
+<div class="hidden md:flex items-center gap-6 font-plus-jakarta-sans leading-relaxed tracking-tight">
+<a class="text-[#4B6542] dark:text-[#8DAA81] font-semibold border-b-2 border-[#4B6542] dark:border-[#8DAA81] pb-1 hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="index.html">Accueil</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="la-mam.html">La MAM</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="equipe.html">L'équipe</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="activites.html">Activités</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="contact.html">Inscription</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#8DAA81] dark:hover:text-[#FCF9F5] transition-all duration-300" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-medium hover:bg-on-primary-container transition-colors duration-300 active:scale-95 transform">
+                Inscription
+            </a>
+<button class="md:hidden text-[#4B6542] p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-20 space-y-32">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center bg-surface-container-low px-4 md:px-8 max-w-7xl mx-auto rounded-3xl overflow-hidden mt-8">
+<div class="absolute inset-0 z-0">
+<img alt="Jardin verdoyant et ensoleillé au Pian-Médoc avec des enfants" class="w-full h-full object-cover opacity-80" data-alt="A joyful toddler playing in a bright, natural outdoor environment, reflecting a warm and professional childcare atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3xy30Ssi2vIx-CTYBsR21yjZ6ln_MTdSjkUfI50zeqDTRUD9A15IWzwi2bnOj0eNcjw4rk-d_sQv_gVCvd2_9-EnR51EO5frIRvBei5-SIiJY_L24R11-AiQtXQZegKVt-_zmEwPx95A-y6yaKKBpbAO6Wis4-FSc85-L6hIAMvL25zRyIFOAT2_gCJD39DW7Deg_x3T1Wbl9tqCNDnyGCYVkZVRONwogMtdiGUpUt-uAFqV-Cv7lAojFWSi9p3OoprukVlgCWl20"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/95 via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-2xl px-8 md:px-16 py-12">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-primary text-sm font-semibold mb-6 shadow-sm">
+<span class="material-symbols-outlined text-tertiary" style="font-size: 18px;">nature</span>
+                    Ouverture prochaine
+                </div>
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-6">
+                    MAM Les Petits Médocains
+                </h1>
+<h2 class="text-2xl md:text-3xl font-semibold text-primary mb-8">Accueil collectif de qualité au cœur du Médoc</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl font-medium">
+                    Un lieu chaleureux et sécurisé pour vos enfants de 0 à 6 ans. Un cocon bienveillant pensé pour leur épanouissement au contact de la nature.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a href="contact.html" class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                        Inscrire mon enfant
+                    </a>
+<a href="la-mam.html" class="bg-surface-container-lowest text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-surface-container transition-colors duration-300 shadow-sm">
+                        Nous découvrir
+                    </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1 space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container text-sm font-semibold">
+<span class="material-symbols-outlined" style="font-size: 18px;">home</span>
+                        Notre Histoire
+                    </div>
+<h2 class="text-3xl md:text-5xl font-bold text-on-surface tracking-tight">Une maison pensée pour l'enfant</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Née de la volonté de trois professionnelles de la petite enfance passionnées, la Maison d'Assistantes Maternelles (MAM) "Les Petits Médocains" offre un compromis idéal entre l'accueil familial d'une assistante maternelle et l'accueil collectif d'une crèche.
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Notre espace de 120m², entièrement rénové et sécurisé, a été pensé dans les moindres détails pour répondre aux besoins spécifiques des tout-petits. Les espaces de jeux, de repos et de repas sont distincts et adaptés à chaque tranche d'âge.
+                    </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="bg-surface-container p-6 rounded-2xl">
+<h4 class="text-3xl font-extrabold text-primary mb-2">120m²</h4>
+<p class="text-on-surface-variant font-medium">D'espace intérieur aménagé</p>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl">
+<h4 class="text-3xl font-extrabold text-tertiary mb-2">3</h4>
+<p class="text-on-surface-variant font-medium">Professionnelles diplômées</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 relative">
+<img alt="Intérieur chaleureux de la MAM" class="rounded-3xl shadow-2xl object-cover aspect-[4/5] w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzGXJq225rWlT32YKBtPfjkaDzI-4g7S3mQHgxpGadVBXOn0YDDJrVWToxkVxo6EatPu_EbvzuS3ABrjYk3JBj1qHflk8qbz6fEs_N7QDLPRUclVI2woKL8j9K1DbozbQO-JUL93JJB8azfQ-HP3FIV9ofDqOm5mXlPuArLrnio7KAar2JR049giZcvfxPsQ6xu9XW64SM8BqUlee1Gz5PvtCVScUv6C9S2_h9oOyFgDmB5NH2Zw1LxP0eIgoSY4HN4JoDxks3tfN9"/>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-6 rounded-2xl shadow-xl max-w-xs hidden md:block border border-surface-container-high">
+<p class="text-lg font-bold text-on-surface mb-2">"Un cadre rassurant, comme à la maison."</p>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined icon-fill">star</span>
+<span class="material-symbols-outlined icon-fill">star</span>
+<span class="material-symbols-outlined icon-fill">star</span>
+<span class="material-symbols-outlined icon-fill">star</span>
+<span class="material-symbols-outlined icon-fill">star</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Full Width Nature Immersive Section -->
+<section class="relative min-h-[80vh] flex items-center justify-center text-center">
+<div class="absolute inset-0 z-0">
+<img alt="Enfant explorant la nature" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyglAEkfNzkI0wlfJPfKrChbLXxBrdlXG0h86Mw-4fUx5igOjuoTV7kQpUJEHrHffgHS7AuaT3A7WaCExe3VDE9R1Ei8YBLYwWUpXIrys6PGFUsEfq7kYaUNnhmdtrYaFpzOV94wCpB4FpIQWkfEqh5DlTTzDNRECQ09jfrWJedFUPllU8Bx_3Z1TE4PQ_9lBbaOxSHvTzApU8hkGaHu5Oq3BeasIMsaR-r6ZJg-WqjpdMavXREA5EBzEbdvgm8i5Irw8xBucZ1Rhq"/>
+<div class="absolute inset-0 bg-surface-container-lowest/40 backdrop-blur-[2px]"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/90 via-surface-container-lowest/50 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl px-8 py-20 bg-surface-container-lowest/80 backdrop-blur-md rounded-3xl mx-4 border border-white/20 shadow-2xl">
+<span class="material-symbols-outlined text-primary mb-6" style="font-size: 48px;">forest</span>
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-8">La nature comme terrain de jeu</h2>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed font-medium mb-10">
+                    Notre grand jardin arboré permet aux enfants d'expérimenter, de se salir les mains dans le potager, et de développer leur motricité en plein air, chaque jour.
+                </p>
+<a href="activites.html" class="inline-block bg-primary text-on-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-on-primary-container transition-colors duration-300">
+                    Découvrir nos activités extérieures
+                </a>
+</div>
+</section>
+<!-- Pedagogical Project Summary -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 bg-surface rounded-3xl py-16 border border-surface-container">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface tracking-tight mb-6">Notre projet pédagogique</h2>
+<p class="text-on-surface-variant text-xl leading-relaxed">Inspiré des pédagogies actives (Montessori, Reggio), notre accompagnement vise à favoriser l'autonomie et l'éveil sensoriel.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center text-center p-6">
+<div class="w-20 h-20 bg-secondary-container rounded-2xl flex items-center justify-center mb-6 text-on-secondary-container rotate-3">
+<span class="material-symbols-outlined icon-fill" style="font-size: 40px;">palette</span>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4">L'art et la matière</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Peinture propre, manipulation d'argile, jeux d'eau et de sable pour développer la créativité sans contrainte.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6">
+<div class="w-20 h-20 bg-tertiary-container rounded-2xl flex items-center justify-center mb-6 text-on-tertiary-container -rotate-3">
+<span class="material-symbols-outlined icon-fill" style="font-size: 40px;">restaurant</span>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Éducation au goût</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Des repas préparés sur place avec des produits frais, locaux et de saison pour éveiller les papilles.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6">
+<div class="w-20 h-20 bg-primary-container rounded-2xl flex items-center justify-center mb-6 text-on-primary-container rotate-3">
+<span class="material-symbols-outlined icon-fill" style="font-size: 40px;">self_improvement</span>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4">Motricité libre</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Un aménagement qui permet à l'enfant d'explorer ses capacités motrices à son propre rythme, en toute sécurité.</p>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 space-y-12">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold text-on-surface tracking-tight mb-4">Nos valeurs fondatrices</h2>
+<p class="text-on-surface-variant text-lg">Au cœur de notre projet pédagogique, quatre piliers pour accompagner vos enfants au quotidien.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Value Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors duration-300">
+<div class="w-14 h-14 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined icon-fill" style="font-size: 28px;">shield_with_heart</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Sécurité</h3>
+<p class="text-on-surface-variant leading-relaxed">Un environnement adapté et contrôlé, pour que chaque enfant puisse explorer en toute tranquillité d'esprit.</p>
+</div>
+<!-- Value Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors duration-300">
+<div class="w-14 h-14 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 text-tertiary">
+<span class="material-symbols-outlined icon-fill" style="font-size: 28px;">extension</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Éveil</h3>
+<p class="text-on-surface-variant leading-relaxed">Des activités stimulantes et respectueuses du rythme de chacun, favorisant l'autonomie et la créativité.</p>
+</div>
+<!-- Value Card 3 -->
+<div class="bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors duration-300">
+<div class="w-14 h-14 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 text-primary-container">
+<span class="material-symbols-outlined icon-fill" style="font-size: 28px;">eco</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Nature</h3>
+<p class="text-on-surface-variant leading-relaxed">Un contact privilégié avec l'extérieur, sensibilisant les plus petits à la beauté de notre environnement local.</p>
+</div>
+<!-- Value Card 4 -->
+<div class="bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors duration-300">
+<div class="w-14 h-14 bg-surface-container-highest rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined icon-fill" style="font-size: 28px;">favorite</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Bienveillance</h3>
+<p class="text-on-surface-variant leading-relaxed">Une approche éducative douce, basée sur l'écoute, le respect des émotions et l'encouragement positif.</p>
+</div>
+</div>
+</section>
+<!-- Full Width Lifestyle Section -->
+<section class="relative min-h-[70vh] flex items-center">
+<div class="absolute inset-0 z-0">
+<img alt="Enfants jouant ensemble" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMNcvjymAowCu1U6RFuqlm5ddYzK7Ix6pVIGKNlM-G0xWdm4lMqHe9uRlqX6rIagGPPP98NiXrskVYrQFcshWkr5r3hcS6vyOEl7v0fqh9kU_tfp3C4IiV_vkDMAVKS64cHoreAdPBKGg_NUCi1ttn3yzpz7Ibdk6T7aHls64hlpJWLOHFxIo0-vdZd9FwezcsMVGSetCIlygsprG0Ln4vzIuSPnoUwMsTYOxo4FmT1uIZDTtZq7WSqD_H7TxyfV_9gcfaC5YwB93V"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/95 via-surface-container-lowest/70 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-6">Le vivre ensemble</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed font-medium mb-8">
+                        La vie en petit groupe favorise les premières interactions sociales, l'empathie et le partage, préparant doucement l'enfant à l'entrée à l'école maternelle.
+                    </p>
+<div class="flex items-center gap-4 text-tertiary font-semibold text-lg">
+<span class="material-symbols-outlined icon-fill">groups</span>
+<span>Groupes d'âges mélangés</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Layout: Info & Testimonials -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Col: Hours & Info -->
+<div class="lg:col-span-5 space-y-6">
+<div class="bg-surface-container-low rounded-xl p-8 lg:p-10 border border-surface-container">
+<h3 class="text-2xl font-bold text-on-surface mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+                        Horaires &amp; Informations
+                    </h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="w-2 h-2 rounded-full bg-primary mt-2"></div>
+<div>
+<p class="font-semibold text-on-surface">Ouverture</p>
+<p class="text-on-surface-variant">Lundi au Vendredi</p>
+<p class="text-primary font-medium text-lg mt-1">7h30 - 18h30</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-2 h-2 rounded-full bg-tertiary mt-2"></div>
+<div>
+<p class="font-semibold text-on-surface">Capacité d'accueil</p>
+<p class="text-on-surface-variant mt-1">Jusqu'à 12 enfants simultanément, garantissant un suivi personnalisé.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary mt-2"></div>
+<div>
+<p class="font-semibold text-on-surface">Localisation</p>
+<p class="text-on-surface-variant mt-1">Situé au cœur du Pian-Médoc, facile d'accès avec parking sécurisé.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Col: Testimonials (Bento style) -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="col-span-1 md:col-span-2">
+<h3 class="text-2xl font-bold text-on-surface mb-2">Mots de parents</h3>
+<p class="text-on-surface-variant mb-4">La confiance des familles est notre plus belle réussite.</p>
+</div>
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-lg border border-surface-container-highest md:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-1 text-tertiary mb-4">
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+</div>
+<p class="text-on-surface italic mb-6 text-lg">"Un cadre exceptionnel. L'équipe est d'une douceur incroyable et le jardin est un vrai plus pour l'épanouissement des enfants. Nous laissons Léo chaque matin l'esprit tranquille."</p>
+<p class="text-sm font-semibold text-on-surface-variant">— Sophie M., maman de Léo (2 ans)</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-low rounded-xl p-8 border border-surface-container md:col-span-2 lg:col-span-1 flex flex-col justify-between">
+<div class="flex items-center gap-1 text-tertiary mb-4">
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+<span class="material-symbols-outlined icon-fill" style="font-size: 20px;">star</span>
+</div>
+<p class="text-on-surface italic mb-6 text-lg">"Structure à taille humaine où chaque enfant est pris en compte dans son individualité. Les activités proposées sont toujours très pertinentes."</p>
+<p class="text-sm font-semibold text-on-surface-variant">— Thomas D., papa de Chloé (18 mois)</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-8 py-16 md:py-24 flex flex-col items-center gap-10 bg-surface-container-low rounded-t-[3rem] mt-20 border-t border-surface-container">
+<div class="text-2xl font-black text-[#4B6542] dark:text-[#8DAA81]">
+            <a href="index.html">MAM Les Petits Médocains</a>
+        </div>
+<nav class="flex flex-wrap justify-center gap-8 font-plus-jakarta-sans text-base leading-relaxed">
+<a class="text-[#4B6542] dark:text-[#8DAA81] font-bold transition-opacity hover:opacity-80" href="index.html">Accueil</a>
+<a class="text-on-surface-variant hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="la-mam.html">La MAM</a>
+<a class="text-on-surface-variant hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="equipe.html">L'équipe</a>
+<a class="text-on-surface-variant hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="activites.html">Activités</a>
+<a class="text-on-surface-variant hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="contact.html">Inscription</a>
+<a class="text-on-surface-variant hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="contact.html">Contact</a>
+<a class="text-on-surface-variant hover:text-[#4B6542] dark:hover:text-[#8DAA81] underline underline-offset-4 transition-opacity hover:opacity-80" href="https://monenfant.fr">monenfant.fr</a>
+</nav>
+<div class="text-on-surface-variant text-sm font-plus-jakarta-sans leading-relaxed text-center">
+            © 2024 MAM Les Petits Médocains - Le Pian-Médoc. Tous droits réservés.
+        </div>
+</footer>
+</body></html>
