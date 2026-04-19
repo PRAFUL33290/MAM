@@ -119,7 +119,7 @@
 <!-- Contact Form (Left Side) -->
 <section class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_12px_40px_rgba(75,101,66,0.08)]">
 <h2 class="text-3xl font-bold font-headline mb-8 text-on-surface">Formulaire d'inscription</h2>
-<form class="flex flex-col gap-6">
+<form id="contact-form" class="flex flex-col gap-6">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
 <label class="text-sm font-medium text-secondary" for="parent-name">Nom du parent</label>
@@ -154,7 +154,8 @@
 <label class="text-sm font-medium text-secondary" for="message">Votre message</label>
 <textarea class="bg-surface-container-highest rounded-md px-4 py-3 border-none focus:ring-0 focus:outline focus:outline-1 focus:outline-[#74796f]/30 transition-all text-on-surface resize-none" id="message" placeholder="Précisez vos besoins de garde (jours, horaires souhaités)" rows="4"></textarea>
 </div>
-<button class="mt-4 bg-primary text-on-primary rounded-full px-8 py-4 font-medium self-start hover:bg-primary-container transition-colors duration-300" type="submit">Envoyer la demande</button>
+<button id="submit-btn" class="mt-4 bg-primary text-on-primary rounded-full px-8 py-4 font-medium self-start hover:bg-primary-container transition-colors duration-300" type="submit">Envoyer la demande</button>
+<div id="form-status" class="hidden mt-4 px-4 py-3 rounded-md text-sm font-medium"></div>
 </form>
 </section>
 <!-- Info & Map (Right Side) -->
@@ -210,4 +211,42 @@
 </div>
 <p class="font-plus-jakarta-sans text-sm leading-relaxed text-stone-500 dark:text-stone-400">© 2024 MAM Les Petits Médocains - Le Pian-Médoc. Tous droits réservés.</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const supabase = window.supabase.createClient(
+    'https://ygwyvnrzsnhixasllloz.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlnd3l2bnJ6c25oaXhhc2xsbG96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2MTk2ODYsImV4cCI6MjA5MjE5NTY4Nn0.IFzqeYUwcgHi3dEzaev8p21mPkr2rrGWh7iw7YclVtE'
+  );
+
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours…';
+    status.className = 'hidden mt-4 px-4 py-3 rounded-md text-sm font-medium';
+
+    const { error } = await supabase.from('contact_submissions').insert({
+      parent_name: document.getElementById('parent-name').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      child_name: document.getElementById('child-name').value.trim() || null,
+      child_age: document.getElementById('child-age').value || null,
+      message: document.getElementById('message').value.trim()
+    });
+
+    if (error) {
+      status.textContent = 'Une erreur est survenue. Veuillez réessayer.';
+      status.className = 'mt-4 px-4 py-3 rounded-md text-sm font-medium bg-red-100 text-red-700';
+      btn.disabled = false;
+      btn.textContent = 'Envoyer la demande';
+    } else {
+      status.textContent = 'Votre demande a bien été envoyée ! Nous vous contacterons rapidement.';
+      status.className = 'mt-4 px-4 py-3 rounded-md text-sm font-medium bg-green-100 text-green-700';
+      e.target.reset();
+      btn.textContent = 'Envoyer la demande';
+    }
+  });
+</script>
 </body></html>
